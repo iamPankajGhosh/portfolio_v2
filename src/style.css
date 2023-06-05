@@ -46,6 +46,14 @@
     */
 
   --section-padding: 100px;
+
+  /**
+    * border radius
+    */
+
+  --radius-pill: 100px;
+  --radius-circle: 50%;
+  --blob-radius: 52% 48% 59% 41% / 53% 40% 60% 47%;
 }
 
 /*-----------------------------------*\
