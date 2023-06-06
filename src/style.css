@@ -124,7 +124,6 @@ body{
   font-size: 1.6rem;
   line-height: 1.75;
   overflow: hidden;
-  height: 300vh;
 }
 
 body.loaded{
@@ -157,6 +156,48 @@ body.nav-active{
 /*-----------------------------------*\
   #PRELOADER
 \*-----------------------------------*/
+
+.preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--eerie-black);
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  transition: var(--transition-2);
+  transition-delay: 0.5s;
+}
+
+.preloader.loaded{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preloader .circle{
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--raisin-black);
+  border-top-color: var(--white);
+  border-radius: var(--radius-circle);
+  animation: rotate360 1s linear infinite;
+  transition: var(--transition-2);
+}
+
+@keyframes rotate360 {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(1turn);
+  }
+}
+
+.preloader.loaded .circle{
+  opacity: 0;
+}
 
 /*-----------------------------------*\
   #HEADER
