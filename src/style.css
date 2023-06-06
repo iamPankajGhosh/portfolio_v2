@@ -71,9 +71,88 @@
   #RESET
 \*-----------------------------------*/
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+data,
+span,
+button,
+ion-icon {
+  display: block;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+img{
+  height: auto;
+}
+
+button{
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+ion-icon{
+  pointer-events: none;
+}
+
+html{
+  font-family: var(--ff-syne);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--eerie-black);
+  color: var(--roman-silver);
+  font-size: 1.6rem;
+  line-height: 1.75;
+  overflow: hidden;
+  height: 300vh;
+}
+
+body.loaded{
+  overflow: overlay;
+}
+
+body.nav-active{
+  overflow: hidden;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
+
+
 
 /*-----------------------------------*\
   #PRELOADER
