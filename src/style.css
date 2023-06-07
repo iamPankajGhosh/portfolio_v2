@@ -692,17 +692,17 @@ h4 {
   #BLOG
 \*-----------------------------------*/
 
-.blog-list{
+.blog-list {
   display: grid;
   gap: 60px;
 }
 
-.blog-card{
+.blog-card {
   display: grid;
   gap: 40px;
 }
 
-.blog-card .card-content{
+.blog-card .card-content {
   display: flex;
   gap: 16px;
   padding-inline: 16px;
@@ -718,13 +718,43 @@ h4 {
   line-height: 0.9;
 }
 
-.blog-card .card-text{
+.blog-card .card-text {
   margin-block: 20px;
 }
 
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
+
+.footer {
+  background-color: var(--raisin-black);
+  padding-block: 76px;
+}
+
+.footer .container {
+  display: grid;
+  gap: 20px;
+}
+
+.social-list {
+  display: flex;
+  gap: 8px;
+}
+
+.social-link {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--white_a10);
+  border-radius: var(--radius-circle);
+  color: var(--white);
+  transition: var(--transition-1);
+}
+
+.social-link:is(:hover, :focus-visible){
+  border-color: var(--white);
+}
 
 /*-----------------------------------*\
   #MEDIA QUERIES
