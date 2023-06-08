@@ -468,6 +468,10 @@ h4 {
   transition: var(--transition-1);
 }
 
+.navbar-list li:nth-child(2){
+  display: none;
+}
+
 .navbar-link:is(:hover, :focus-visible) {
   text-shadow: 1px 0 0 var(--eerie-black);
 }
@@ -492,6 +496,7 @@ h4 {
 
 .hero {
   padding-block-start: 130px;
+  padding-block-end: 0;
 }
 
 .hero-title {
@@ -569,6 +574,10 @@ h4 {
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
+
+.service {
+  display: none;
+}
 
 .service-card {
   position: relative;
@@ -722,7 +731,7 @@ h4 {
   margin-block: 20px;
 }
 
-.blog-card .btn{
+.blog-card .btn {
   cursor: not-allowed;
 }
 
