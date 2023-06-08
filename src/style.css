@@ -645,24 +645,24 @@ h4 {
 }
 
 /*-----------------------------------*\
-  #PORTFOLIO
+  #project
 \*-----------------------------------*/
 
-.portfolio .slider {
+.project .slider {
   --item-gap: 16px;
 }
 
-.portfolio-card {
+.project-card {
   position: relative;
   background-color: transparent;
   transition: var(--cubic-ease-out);
 }
 
-.portfolio-card .img-cover {
+.project-card .img-cover {
   transition: var(--cubic-ease-out);
 }
 
-.portfolio-card .card-content {
+.project-card .card-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -674,16 +674,16 @@ h4 {
   z-index: 1;
 }
 
-.portfolio-card .card-text {
+.project-card .card-text {
   color: var(--white);
 }
 
-.portfolio-card:is(:hover, :focus-within) .img-cover {
+.project-card:is(:hover, :focus-within) .img-cover {
   opacity: 0.1;
   transform: scale(0.95);
 }
 
-.portfolio-card:is(:hover, :focus-within) .card-content {
+.project-card:is(:hover, :focus-within) .card-content {
   transform: translate(-50%, -50%);
   opacity: 1;
 }
