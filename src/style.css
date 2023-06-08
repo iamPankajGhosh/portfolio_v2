@@ -937,20 +937,20 @@ h4 {
   /**
     * HERO
     */
-  
-  .hero-subtitle{
-    --fs-8: 1.4rem
+
+  .hero-subtitle {
+    --fs-8: 1.4rem;
   }
 
   /**
     * SKILLS
     */
 
-  .skills .section-title{
+  .skills .section-title {
     max-width: 16ch;
   }
 
-  .skills-wrapper{
+  .skills-wrapper {
     gap: 10%;
   }
 
@@ -969,5 +969,66 @@ h4 {
 
   .blog-list li:nth-child(2n) .card-banner {
     order: 1;
+  }
+}
+
+/**
+  * responsive for large than 1200px screen
+  */
+
+@media (min-width: 1200px) {
+  /**
+    * CUSTOM PROPERTY
+    */
+
+  :root {
+    /**
+      * spacing
+      */
+
+    --section-padding: 140px;
+  }
+
+  /**
+    * REUSED STYLE
+    */
+
+  .container {
+    max-width: 1140px;
+  }
+
+  /**
+    * HEADER
+    */
+
+  .navbar {
+    top: 0;
+    display: grid;
+    place-items: center;
+  }
+
+  .nav-toggle-btn {
+    position: relative;
+    z-index: 2;
+  }
+
+  .overlay {
+    top: 0;
+  }
+
+  /**
+    * HERO
+    */
+
+  .hero-content {
+    width: 55%;
+  }
+
+  .hero-title {
+    word-break: normal;
+  }
+
+  .hero .section-text {
+    margin-block-end: 52px;
   }
 }
