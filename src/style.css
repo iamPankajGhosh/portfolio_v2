@@ -963,11 +963,7 @@ h4 {
   /**
     * HERO
     */
-
-  .hero {
-    padding-block-start: 50px;
-  }
-
+  
   .hero-subtitle {
     --fs-8: 1.4rem;
   }
